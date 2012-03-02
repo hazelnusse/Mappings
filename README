@@ -1,0 +1,4 @@
+Mappings
+--------
+Four C++ abstract base classes are provided for the purpose of subclassing.
+The four types cover autonomous/non-autonomous exogenous/endogenous systems.
