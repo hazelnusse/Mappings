@@ -73,6 +73,9 @@ namespace dynamics {
                               const std::array<T, N> & x,
                               const std::array<T, M> & u,
                               std::array<T, N> & rhs) = 0;
+      /*!
+       * Destructor
+       */
       virtual ~MappingNonAutonomousExogenous() {};
   };
 
@@ -113,6 +116,9 @@ namespace dynamics {
       virtual void ComputeRHS(const std::array<T, N> & x,
                               const std::array<T, M> & u,
                               std::array<T, N> & rhs) = 0;
+      /*!
+       * Destructor
+       */
       virtual ~MappingAutonomousExogenous() {};
   };
 
@@ -151,6 +157,9 @@ namespace dynamics {
        */
       virtual void ComputeRHS(const std::array<T, N> & x,
                               std::array<T, N> & rhs) = 0;
+      /*!
+       * Destructor
+       */
       virtual ~MappingAutonomousEndogenous() {};
   };
 
@@ -193,6 +202,9 @@ namespace dynamics {
       virtual void ComputeRHS(const I & ti,
                               const std::array<T, N> & x,
                               std::array<T, N> & rhs) = 0;
+      /*!
+       * Destructor
+       */
       virtual ~MappingNonAutonomousEndogenous() {};
   };
 }
